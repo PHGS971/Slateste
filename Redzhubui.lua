@@ -34,17 +34,31 @@ local redzlib = {
 			["Color Text"] = Color3.fromRGB(245, 245, 245),
 			["Color Dark Text"] = Color3.fromRGB(190, 190, 190)
 		},
-		Purple = {
+		CYA = {
+
+            -- Aqui vai ser o fundo (background) da libary
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0, 0.8)), 
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0, 1)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0, 0.8))
 			}),
-			["Color Hub 2"] = Color3.fromHex("#0c0404"),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(150, 0, 255),
-			["Color Text"] = Color3.fromHex("#fef2f2"),
-			["Color Dark Text"] = Color3.fromHex("#fef2f2")
+
+            -- Cor de fundo das tabs, buttons, toggles, dropdowns e sliders
+			["Color Hub 2"] = Color3.fromRGB(140, 24, 1),
+
+            -- Cor que afeta o elemento toggle, fundo da barra do slider e a caixinha do dropdown
+			["Color Stroke"] = Color3.fromRGB(255, 255, 255),
+
+            -- Cor de ativaÃ§Ã£o do toggle, barra do slider e o selected da dropdown
+			["Color Theme"] = Color3.fromRGB(0, 255, 41),
+
+
+			["Color Text"] = Color3.fromRGB(243, 243, 243),
+
+
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+
+            
 		}
 	},
 	Info = {
@@ -53,7 +67,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Purple"
+		Theme = "CYA"
 	},
 	Settings = {},
 	Connection = {},
